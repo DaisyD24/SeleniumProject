@@ -1,0 +1,29 @@
+
+public class Vehicle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		public void driving() {
+		
+			System.outprintln("Iam driving my father's car");
+	public void brake () {
+		System.outprintln("The brake is well");
+		
+		public void mirror() {("I can see the mirror"); 
+		
+		public void stering() {
+			System.out.println("Stering is smooth");}
+		}
+		
+	}
+		}
+		
+	}
+
+	private static void driving() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
