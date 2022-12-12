@@ -16,16 +16,26 @@ public class ReadExcel {
 		XSSFWorkbook wb = new XSSFWorkbook("./data/ReadData.xlsx");
 						
 		//Get Sheet
-		XSSFSheet sheet = wb.getSheet("sheet1");
+		XSSFSheet sheet = wb.getSheet("sheet2");
+		//Get Row Count
+		int rowCount = sheet.getLastRowNum();
+		System.out.println(rowCount);
+		//Get Column Count
+	int	columnCount = sheet.getRow(0).getLastCellNum();
+	System.out.println(columnCount);
+	for (int i = 1; i <= rowCount; i++) {
 		
-		//Get row
-		XSSFRow row = sheet.getRow(4);
-					
-		//Get column
-		XSSFCell cell = row.getCell(1);
 		
-		//Action- Read/print particular CellValue from excelSheet
-		String Svalue = cell.getStringCellValue();
-		System.out.println(Svalue);
+			//Get row
+			XSSFRow row = sheet.getRow(i);
+			
+			for (int j = 0; j < columnCount; j++) {	
+			//Get column
+			XSSFCell cell = row.getCell(j);
+			//Action- Read/print particular CellValue from excelSheet
+			String Svalue = cell.getStringCellValue();
+			System.out.println(Svalue);
+		}//ends Column Loop
+		}//ends Row Loop
 }
 }

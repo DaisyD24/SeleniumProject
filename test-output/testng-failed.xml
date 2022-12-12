@@ -5,8 +5,8 @@
     <classes>
       <class name="steps.RunnerFile">
         <methods>
+          <include name="runScenario" invocation-numbers="1"/>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0 1"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- steps.RunnerFile -->
